@@ -21,4 +21,10 @@ class product_provider extends ChangeNotifier
   {
     Cart.add(p1);
   }
+
+  void increment_decrement(int index,product_model p1)
+  {
+    Cart[index] = p1;
+    notifyListeners();
+  }
 }

@@ -17,6 +17,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          actions: [
+            IconButton(onPressed: () {
+              Navigator.pushNamed(context, 'cart');
+            }, icon: Icon(Icons.shopping_cart))
+          ],
           title: Text("HomeScreen"),
           centerTitle: true,
           backgroundColor:

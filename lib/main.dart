@@ -1,3 +1,4 @@
+import 'package:add_to_cart/Screen/cart/view/cart_screen.dart';
 import 'package:add_to_cart/Screen/home/provider/product_provider.dart';
 import 'package:add_to_cart/Screen/home/view/home_screen.dart';
 import 'package:add_to_cart/Screen/product/view/product_screen.dart';
@@ -14,6 +15,7 @@ void main() {
         routes: {
           '/':(context) => HomeScreen(),
           'product':(context) => ProductScreen(),
+          'cart':(context) => CartScreen(),
         },
       ),
     ),
